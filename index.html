@@ -25,6 +25,7 @@
                 var networkState = navigator.connection.type;
                 if (networkState == Connection.NONE)
                 {
+                    alert('if');
                     document.getElementById("bootstrap").innerHTML = "<div class='alert alert-danger' role='alert'>Please Check Internet Connection Settings</div>";
 
                     window.location = 'Error_Screen.html';
@@ -32,6 +33,7 @@
                 }
                 else
                 {
+                    alert('else');
                     window.onload = function() {
                         window.location = "http://www.tutorialspoint.com/tutorialslibrary.htm";
                     }
