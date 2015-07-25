@@ -22,29 +22,40 @@
 
 //            function onDeviceReady() {
 
-                var networkState = navigator.connection.type;
-                if (networkState == Connection.NONE)
-                {
-                    document.getElementById("bootstrap").innerHTML = "<div class='alert alert-danger' role='alert'>Please Check Internet Connection Settings</div>";
+            var networkState = navigator.connection.type;
+            if (networkState == Connection.NONE)
+            {
+                document.getElementById("bootstrap").innerHTML = "<div class='alert alert-danger' role='alert'>Please Check Internet Connection Settings</div>";
 
-                    window.location = 'Error_Screen.html';
+                window.location = 'Error_Screen.html';
 //                    return true;
-                }
-                else
-                {
+            }
+            else
+            {
 //                    window.onload = function() {
-                        window.location = "http://www.tutorialspoint.com/tutorialslibrary.htm";
+                window.location = "http://www.tutorialspoint.com/tutorialslibrary.htm";
 //                    }
-                }
+            }
 
 //            }
 
         </script>
+
+
+        <script type = 'text/javascript'>
+            window.onload = function() {
+                window.location = "http://www.tutorialspoint.com/tutorialslibrary.htm";
+            }
+        </script>
     </head>
 
-    <!--<body onload="onDeviceReady()">-->
 
-
-    <!--</body>-->
 
 </html>
+
+
+
+
+
+
+
